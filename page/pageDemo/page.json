@@ -1,0 +1,59 @@
+{
+    "message": "操作成功",
+    "statusCode": "200",
+    "pageCurr": 7,
+    "pageCount": 8,
+    "url": "https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png",
+    "data": [
+        {
+            "giftCode": "仙侠传奇1vNXVY9SYV5EYS9Y2cdtfn03u",
+            "url": "http://img.d.cn/be/image/1610/3v3peiutmm3u2.png",
+            "gameName": "仙侠传奇1"
+        },
+        {
+            "giftCode": "恋姬无双2NXVY9SYV5EYS9Y2cdtfn03u",
+            "url": "http://img.d.cn/be/image/1610/3v3peiutmm3u2.png",
+            "gameName": "恋姬无双2"
+        },
+        {
+            "giftCode": "恋姬无双2NXVY9SYV5EYS9Y2cdtfn03u",
+            "url": "http://img.d.cn/be/image/1610/3v3peiutmm3u2.png",
+            "gameName": "恋姬无双"
+        },
+        {
+            "giftCode": "NXVY9SYV5EYS9Y2cdtfn03u",
+            "url": "http://img.d.cn/be/image/1610/3v3peiutmm3u2.png",
+            "gameName": "仙侠传奇"
+        },
+        {
+            "giftCode": "恋姬无双2NXVY9SYV5EYS9Y2cdtfn03u",
+            "url": "http://img.d.cn/be/image/1610/3v3peiutmm3u2.png",
+            "gameName": "仙侠传奇"
+        },
+        {
+            "giftCode": "NXVY9SYV5EYS9Y2cdtfn03u",
+            "url": "http://img.d.cn/be/image/1610/3v3peiutmm3u2.png",
+            "gameName": "仙侠传奇"
+        },
+        {
+            "giftCode": "NXVY9SYV5EYS9Y2cdtfn03u",
+            "url": "http://img.d.cn/be/image/1610/3v3peiutmm3u2.png",
+            "gameName": "仙侠传奇"
+        },
+        {
+            "giftCode": "NXVY9SYV5EYS9Y2cdtfn03u",
+            "url": "http://img.d.cn/be/image/1610/3v3peiutmm3u2.png",
+            "gameName": "仙侠传奇"
+        },
+        {
+            "giftCode": "NXVY9SYV5EYS9Y2cdtfn03u",
+            "url": "http://img.d.cn/be/image/1610/3v3peiutmm3u2.png",
+            "gameName": "仙侠传奇"
+        },
+        {
+            "giftCode": "NXVY9SYV5EYS9Y2cdtfn03u",
+            "url": "http://img.d.cn/be/image/1610/3v3peiutmm3u2.png",
+            "gameName": "仙侠传奇"
+        }
+    ]
+}

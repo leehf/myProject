@@ -1,0 +1,33 @@
+{
+    "statusCode": 200,
+    "desc": "请求成功",
+    "data": {
+        "aboutUs": {
+            "aboutUsAd": {
+                "type": "aaa",
+                "name": "关于我们顶部广告",
+                "list": [
+                    {
+                        "name": "fiohfn",
+                        "desc": "",
+                        "bigImg": "http://www.yueeyou.com/img/20141113171649_20457.png",
+                        "smallImg": "",
+                        "href1": "a",
+                        "href2": ""
+                    }
+                ]
+            },
+            "cn_desc": "成都悦游无限科技有限公司（以下简称“悦游无限”），是一家以智能手机娱乐产品、手机游戏研发和推广运营为主要业务的新兴企业。悦游无限致力于提供高质量的手机游戏产品，为研发商提供有价值的移动游戏发行支持，带给全球用户更好的游戏体验和高质量的服务。我们的团队核心成员均来自知名游戏、互联网公司，均拥多年行业从业经验，凭借专业开阔的视角、强大的技术底蕴以及强有力的数据分析、运营能力，持续的变革和创新精神，满足不断变化的用户需求，为用户和合作伙伴创造更多价值，共同开创移动互联网和移动游戏娱乐的新时代。",
+            "en_desc": "CHENGDU YUEYOU UNLIMITED TECHNOLOGY CO., LTD. (HEREINAFTER REFERRED TO AS 'YUEYOUUNLIMITED'), IS A SMART PHONE ENTERTAINMENT PRODUCTS, MOBILE GAMING RESEARCH AND DEVELOPMENT AND PUSH WIDE OPERATION AS THE MAIN BUSINESS OF THE EMERGING ENTERPRISES. YUEYOU ARE COMMITTED TO PROVIDING HIGH QUALITY MOBILE GAME PRODUCTS, TO PROVIDE THE VALUE OF R & D MOBILE GAME RELEASE SUPPORT, TO GIVE THE WORLD A BETTER GAMING EXPERIENCE AND HIGH QUALITY SERVICE. OUR CORE MEMBERS ARE FROM THE WELL-KNOWN GAME & INTERNET COMPANYS, HAS MANY YEARS OF INDUSTRY EXPERIENCE, WITH A PROFESSIONAL OPEN PERSPECTIVE, STRONG TECHNICAL BACKGROUND AND STRONG DATA ANALYSIS, OPERATIONAL CAPABILITIES, CONTINUOUS CHANGE AND INNOVATIVE SPIRIT, TO MEET THE CHANGING NEEDS OF USERS, TO CREATE MORE VALUE FOR USERS AND PARTNERS, TOGETHER CREATE A NEW ERA OF MOBILE INTERNET AND MOBILE GAMING ENTERTAINMENT.",
+            "imgs": [
+                "img/img1.jpg",
+                "img/img2.jpg",
+                "img/img3.jpg",
+                "img/img4.jpg"
+            ],
+            "address": "成都市高新区天府大道中段天府软件园E区1栋12层25号",
+            "contactTo": "马仕杰",
+            "contactTel": "028-86271609"
+        }
+    }
+}

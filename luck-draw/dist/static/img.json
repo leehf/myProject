@@ -1,0 +1,92 @@
+{
+	"code": 2,
+	"data": {
+		"times": 1,
+		"info": {
+			"awardTos": [
+				{
+					"awardAmount": 9999,
+					"id": 451,
+					"name": "谢谢参与",
+					"picUrl": "./static/demo-icon.png",
+					"possible": 0.0,
+					"sort": 1,
+					"thingId": 0
+				}, {
+					"awardAmount": 9999,
+					"id": 455,
+					"name": "谢谢参与",
+					"picUrl": "./static/demo-icon.png",
+					"possible": 0.0,
+					"sort": 1,
+					"thingId": 0
+				}, {
+					"awardAmount": 9999,
+					"id": 458,
+					"name": "谢谢参与",
+					"picUrl": "./static/demo-icon.png",
+					"possible": 0.0,
+					"sort": 1,
+					"thingId": 0
+				}, {
+					"awardAmount": 200,
+					"id": 452,
+					"name": "金币",
+					"picUrl": "./static/demo-icon.png",
+					"possible": 1.0,
+					"sort": 2,
+					"thingId": 183
+				}, {
+					"awardAmount": 300,
+					"id": 467,
+					"name": "礼包",
+					"picUrl": "./static/demo-icon.png",
+					"possible": 0.0,
+					"sort": 4,
+					"thingId": 237
+				}, {
+					"awardAmount": 200,
+					"id": 452,
+					"name": "金币",
+					"picUrl": "./static/demo-icon.png",
+					"possible": 1.0,
+					"sort": 2,
+					"thingId": 128
+				}, {
+					"awardAmount": 200,
+					"id": 547,
+					"name": "代金券",
+					"picUrl": "./static/demo-icon.png",
+					"possible": 0.0,
+					"sort": 7,
+					"thingId": 162
+				}, {
+					"awardAmount": 50,
+					"id": 551,
+					"name": "乐豆",
+					"picUrl": "./static/demo-icon.png",
+					"possible": 0.0,
+					"sort": 12,
+					"thingId": 11
+				}
+			],
+			"endTime": 1504770634000,
+			"freeTimes": 1,
+			"id": 105,
+			"maxTimes": 100,
+			"name": "sdk抽奖",
+			"price": 1,
+			"startTime": 1500450632000,
+			"userLimitTOS": [
+				{
+					"id": 124,
+					"lotteryId": 105,
+					"maxTimes": 100,
+					"price": 1,
+					"userLevel": 0
+				}
+			]
+		}
+	},
+	"msg": "success"
+}

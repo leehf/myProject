@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/common.min.css">
+        <link rel="stylesheet" href="js/lib/swiper/idangerous.swiper.css">
+        <link rel="stylesheet" href="css/about.css">
+        <meta name="description" itemprop="description" content="悦游无限，用心为每一位游戏爱好者服务。">
+        <meta name="keywords" content="悦游无限,游戏,网游,游戏发行,手游">
+        <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/lib/respond.min.js"></script>
+        <script type="text/javascript" src="js/lib/selectivizr-min.js"></script>
+        <script type="text/javascript" src="js/lib/html5.min.js"></script>
+        <![endif]-->
+        <title>悦游无限</title>
+    </head>
+    <body>
+        <div class="header">
+            <div class="secHeader">
+                <a href="index.html" class="logo">
+                    <img src="img/logo.png" alt="">
+                </a>
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            首页
+                            <span>HOME</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="game.html">
+                            代理游戏
+                            <span>AGENT GAME</span>
+                        </a>
+                    </li>
+                    <li class="curr">
+                        <a href="about.html">
+                            关于我们
+                            <span>ABOUT US</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="about">
+        </div>
+        <footer>
+            <div class="clearfix">
+                <span class="fl"> Copyright © 成都悦游无限科技有限公司</span>
+                <p class="fr">
+                    <a href="javascript:" class="link">蜀ICP备 17008430号-1</a>
+                    <a href="javascript:" class="link">ICP 川B2-20160389</a>
+                    <a href="javascript:">川网文【2016】3665-124号</a>
+                    <a href="custody.html">家长监护系统</a>
+                    <a href="register.html">实名认证系统与防沉迷</a>
+                </p>
+            </div>
+        </footer>
+        <script type="text/html" id="about">
+            [:if(typeof(aboutUs)!=="undefined"){:]
+            <div><a style="background: url('[:=aboutUs.adImg:]')" class="img"></a></div>
+            [:}:]
+            <div class="content">
+                <div class="aboutTit">
+                    <h2>关于我们
+                        <span>About Us</span>
+                    </h2>
+                </div>
+                <div class="text"><p>[:=aboutUs.cnDesc:]</p></div>
+                <div class="text"><p>[:=aboutUs.enDesc:]</p></div>
+                <div class="imgShow clearfix">
+                    [:for(var i=0;i< 4;i++){:]
+                    <div class="fl">
+                        <img src=[:=aboutUs.imgs[i]:] alt="">
+                    </div>
+                    [:}:]
+                </div>
+                <div class="aboutTit">
+                    <h2>
+                        联系我们
+                        <span>Contact Us</span>
+                    </h2>
+                </div>
+                <div class="contact">
+                    <ul>
+                        <li class="fl">
+                            <i class="background-icon address"></i>
+                            <h3>地址</h3>
+                            <p>[:=aboutUs.address:]</p>
+                        </li>
+                        <li class="fl">
+                            <i class="background-icon contactTo"></i>
+                            <h3>联系人</h3>
+                            <p>[:=aboutUs.contactTo:]</p>
+                        </li>
+                        <li class="fl">
+                            <i class="background-icon contactTel"></i>
+                            <h3>联系电话</h3>
+                            <p>[:=aboutUs.contactTel:]</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </script>
+        <script src="js/lib/jquery-1.x.min.js"></script>
+        <script src="js/lib/tppl.js"></script>
+        <script>
+            $(".link").on("click", function () {
+                window.open('javascript:window.name;', '<script>location.replace("http://www.miibeian.gov.cn/state/outPortal/loginPortal.action")<\/script>');
+            })
+        </script>
+        <script>
+            var aboutHtml;
+            $.ajax({
+//                url: "about.json",/*本地数据测试*/
+                url: "http://op.yueeyou.com/portal/api/aboutUs",
+                type: "get",
+                dataType: "json"
+            }).done(function (res) {
+                if (res.statusCode == 200) {
+                    var res = res.data;
+                    aboutHtml = tppl(document.getElementById('about').innerHTML, res);
+                    $(".about").append(aboutHtml);
+                }
+            })
+        </script>
+    </body>
+</html>

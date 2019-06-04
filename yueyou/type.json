@@ -1,0 +1,45 @@
+{
+    "statusCode": 200,
+    "desc": "请求成功",
+    "data": {
+        "categorys": [
+            {
+                "id": 1,
+                "parentId": 0,
+                "name": "卡牌类型1"
+            },
+            {
+                "id": 2,
+                "parentId": 0,
+                "name": "攻略类型2"
+            },
+            {
+                "id": 3,
+                "parentId": 0,
+                "name": "卡牌类型3"
+            },
+            {
+                "id": 4,
+                "parentId": 0,
+                "name": "攻略类型4"
+            },
+            {
+                "id": 5,
+                "parentId": 0,
+                "name": "卡牌类型5"
+            },
+            {
+                "id": 6,
+                "parentId": 0,
+                "name": "攻略类型6"
+            }
+        ],
+        "years": [
+            2017,
+            2016,
+            2015,
+            2014,
+            2013
+        ]
+    }
+}

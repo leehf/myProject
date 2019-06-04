@@ -1,0 +1,57 @@
+{
+    "statusCode": 200,
+    "desc": "ddd",
+    "data": {
+        "article": {
+            "id": 1,
+            "title": "《王者荣耀》KPL秋季赛第一天：AG超玩会旗开得胜，EDG.M逆袭QGhappy",
+            "createDate": "1506700800000",
+            "source": "悦游无限",
+            "content": ""
+        },
+        "articleAd": {
+            "type": "ARTICLE_AD",
+            "name": "",
+            "list": [
+                {
+                    "name": "",
+                    "desc": "",
+                    "bigImg": "http://img.d.cn/be/image/1709/8q44ej7zly6j2.jpg",
+                    "smallImg": "",
+                    "href1": "a",
+                    "href2": ""
+                }
+            ]
+        },
+        "articleHotGame": {
+            "type": "ARTICLE_AD",
+            "name": "",
+            "list": [
+                {
+                    "name": "",
+                    "desc": "",
+                    "bigImg": "http://img.news.d.cn/upimg/1606/241noipgc7t0u.jpg",
+                    "smallImg": "",
+                    "href1": "a",
+                    "href2": ""
+                },
+                {
+                    "name": "",
+                    "desc": "",
+                    "bigImg": "http://img.news.d.cn/upimg/1606/241noipgc7t0u.jpg",
+                    "smallImg": "",
+                    "href1": "a",
+                    "href2": ""
+                },
+                {
+                    "name": "",
+                    "desc": "",
+                    "bigImg": "http://img.news.d.cn/upimg/1606/241noipgc7t0u.jpg",
+                    "smallImg": "",
+                    "href1": "a",
+                    "href2": ""
+                }
+            ]
+        }
+    }
+}

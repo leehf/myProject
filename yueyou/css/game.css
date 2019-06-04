@@ -1,0 +1,226 @@
+body > div.typeChoose {
+  width: 1200px;
+  margin: 130px auto 0 auto;
+  min-height: 140px;
+  background: #fff;
+  border: solid 1px #e5e5e5;
+}
+body > div.typeChoose > div {
+  min-height: 70px;
+  padding: 0 20px;
+}
+body > div.typeChoose > div span {
+  margin: 28px 0 20px 0;
+  line-height: 22px;
+  font-size: 18px;
+  color: #666;
+}
+body > div.typeChoose > div span.timeSpan {
+  margin: 20px 0 28px 0;
+}
+body > div.typeChoose > div ul {
+  max-width: 1050px;
+  margin: 8px 0 20px 0;
+}
+body > div.typeChoose > div ul li {
+  margin-top: 20px;
+  line-height: 22px;
+  font-size: 16px;
+  color: #666;
+  margin-left: 40px;
+  cursor: pointer;
+}
+body > div.typeChoose > div ul li.first-of-type {
+  margin-left: 0;
+}
+body > div.typeChoose > div ul li.curr,
+body > div.typeChoose > div ul li:hover {
+  color: #e74e02;
+}
+body > div.typeChoose > div ul.time {
+  margin: 0 0 28px 0;
+}
+body > div.content {
+  width: 1200px;
+  margin: 0 auto;
+}
+body > div.content > div.rmyx {
+  margin-top: 20px;
+}
+body > div.content > div.gameList {
+  width: 860px;
+  min-height: 600px;
+}
+body > div.content > div.gameList > div {
+  margin-top: 20px;
+  background: #fff;
+  min-height: 600px;
+  text-align: center;
+  padding-top: 100px;
+}
+body > div.content > div.gameList > div p {
+  margin-top: 30px;
+  color: #999;
+  font-size: 16px;
+}
+body > div.content > div.gameList > div > a {
+  display: inline-block;
+  margin-top: 15px;
+  color: #e75208;
+  font-size: 16px;
+  text-decoration: underline;
+}
+body > div.content > div.gameList ul li {
+  border: 2px solid #fff;
+  background: #fff;
+  height: 160px;
+  padding: 20px 20px 12px 20px;
+  margin-top: 20px;
+  position: relative;
+}
+body > div.content > div.gameList ul li:hover {
+  border: 2px solid #ffd6cc;
+}
+body > div.content > div.gameList ul li div {
+  position: relative;
+  display: block;
+}
+body > div.content > div.gameList ul li div div.img {
+  width: 120px;
+  height: 120px;
+}
+body > div.content > div.gameList ul li div div.img img {
+  width: 120px;
+  height: 120px;
+  border-radius: 20px;
+}
+body > div.content > div.gameList ul li div div.text {
+  margin-left: 20px;
+  width: 485px;
+}
+body > div.content > div.gameList ul li div div.text h3 {
+  width: 500px;
+}
+body > div.content > div.gameList ul li div div.text h3 span {
+  display: inline-block;
+  font-weight: normal;
+  font-size: 14px;
+  color: #f07070;
+  vertical-align: bottom;
+  margin: 0 0 0 5px;
+}
+body > div.content > div.gameList ul li div div.text h3 span:first-of-type {
+  height: 21px;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 22px;
+  letter-spacing: 0px;
+  color: #333;
+  margin-right: 10px;
+  margin-left: 0;
+  max-width: 400px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+body > div.content > div.gameList ul li div div.text p {
+  margin-top: 10px;
+  width: 100%;
+  height: 86px;
+  overflow: hidden;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+body > div.content > div.gameList ul li div div.download {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  width: 120px;
+}
+body > div.content > div.gameList ul li div div.download > a {
+  display: block;
+  width: 120px;
+  height: 40px;
+  line-height: 36px;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 5px;
+  background: #fff;
+  border: 2px solid #e75208;
+  color: #e75208;
+}
+body > div.content > div.gameList ul li div div.download > a:hover {
+  background: #e75208;
+  color: #fff;
+}
+body > div.content > div.gameList ul li div div.download > a.enter {
+  border: 2px solid #0ebeee;
+  color: #0ebeee;
+  margin-bottom: 15px;
+}
+body > div.content > div.gameList ul li div div.download > a.enter:hover {
+  background: #0ebeee;
+  color: #fff;
+}
+body > div.content > div.loadMore {
+  margin-top: 20px;
+  display: none;
+  width: 860px;
+  height: 48px;
+  background: #e4e4e4;
+  text-align: center;
+  line-height: 48px;
+  cursor: pointer;
+}
+body > div.content > div.loadMore i {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-position: 0 -175px;
+  vertical-align: text-top;
+}
+body > div.content > div.loadMore:hover {
+  background: #ffd4c9;
+}
+.bg {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 430px;
+}
+.bg > span {
+  position: relative;
+  height: 100%;
+  float: right;
+  width: 0;
+  background: #fff2ef;
+  transition: width 1s;
+  -moz-transition: width 1s; /* Firefox 4 */
+  -webkit-transition: width 1s; /* Safari and Chrome */
+  -o-transition: width 1s; /* Opera */
+}
+.gameList li:hover .bgRight span,
+.gameList li:hover .bg span {
+  width: 430px;
+  opacity: 0.5;
+}
+.bgRight {
+  position: absolute !important;
+  top: 0;
+  left: 430px;
+  height: 100%;
+  width: 430px;
+}
+.bgRight > span {
+  position: relative;
+  height: 100%;
+  float: left;
+  width: 0;
+  background: #fff2ef;
+  transition: width 1s;
+  -moz-transition: width 1s; /* Firefox 4 */
+  -webkit-transition: width 1s; /* Safari and Chrome */
+  -o-transition: width 1s; /* Opera */
+}

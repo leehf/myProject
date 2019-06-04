@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/common.min.css">
+        <link rel="stylesheet" href="js/lib/swiper/idangerous.swiper.css">
+        <link rel="stylesheet" href="css/game.min.css">
+        <meta name="description" itemprop="description" content="悦游无限，用心为每一位游戏爱好者服务。">
+        <meta name="keywords" content="悦游无限,游戏,网游,游戏发行,手游">
+        <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/lib/respond.min.js"></script>
+        <script type="text/javascript" src="js/lib/selectivizr-min.js"></script>
+        <script type="text/javascript" src="js/lib/html5.min.js"></script>
+        <![endif]-->
+        <title>悦游无限</title>
+    </head>
+    <div class="header">
+        <div class="secHeader">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="">
+            </a>
+            <ul>
+                <li class="fl">
+                    <a href="index.html">
+                        首页
+                        <span>HOME</span>
+                    </a>
+                </li>
+                <li class="curr">
+                    <a href="game.html">
+                        代理游戏
+                        <span>AGENT GAME</span>
+                    </a>
+                </li>
+                <li class="fl">
+                    <a href="about.html">
+                        关于我们
+                        <span>ABOUT US</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="typeChoose">
+        <!-- <div class="clearfix">
+             <span class="fl">游戏类型</span>
+             <ul class="type fl clearfix">
+                 <li class="fl curr">全部</li>
+                 <li class="fl">类型一</li>
+                 <li class="fl">类型二</li>
+                 <li class="fl">类型三</li>
+                 <li class="fl">类型四</li>
+                 <li class="fl">类型五</li>
+                 <li class="fl">类型一</li>
+                 <li class="fl">类型二</li>
+                 <li class="fl">类型三</li>
+                 <li class="fl">类型四</li>
+                 <li class="fl">类型五</li>
+             </ul>
+         </div>
+         <div class="clearfix">
+             <span class="fl">上线时间</span>
+             <ul class="time fl clearfix">
+                 <li class="fl curr">全部</li>
+                 <li class="fl">类型一</li>
+                 <li class="fl">类型二</li>
+                 <li class="fl">类型三</li>
+                 <li class="fl">类型四</li>
+                 <li class="fl">类型五</li>
+                 <li class="fl">类型二</li>
+                 <li class="fl">类型三</li>
+                 <li class="fl">类型四</li>
+                 <li class="fl">类型五</li>
+                 <li class="fl">类型二</li>
+                 <li class="fl">类型三</li>
+                 <li class="fl">类型四</li>
+                 <li class="fl">类型五</li>
+             </ul>
+         </div>-->
+    </div>
+    <div class="content clearfix">
+        <div class="fr rmyx">
+            <!-- <div class="Rgame">
+                 <h2>热门游戏</h2>
+                 <ul>
+                     [:if(typeof(articleHotGame.list) !=="undefined"){:]
+                     [:for(var i=0;i< articleHotGame.list.length;i++){:]
+                     <li>
+                         <a href=[:=articleHotGame.list[i].href1:]>
+                             <img src=[:=articleHotGame.list[i].bigImg:] alt="">
+                             <div class="lay"></div>
+                         </a>
+                     </li>
+                     [:}:]
+                     [:}:]
+                 </ul>
+             </div>-->
+        </div>
+        <div class="gameList fl">
+            <!-- <ul>
+                 <li>
+                     <div class="bg"><span class=""></span></div>
+                     <div class="bgRight"><span class=""></span></div>
+                     <div class="clearfix" href="javascript:">
+                         <div class="img fl">
+                             <img src="http://img.d.cn/netgame/hdlogo/7404_1500953686963_XuK1iFS3.png" alt="">
+                         </div>
+                         <div class="text fl">
+                             <h3><span class="tit">【阴阳师攻略 No.3】有关御魂的那些事儿</span><span>角色</span> <span>仙侠</span></h3>
+                             <p>由Pixel Hero Game基于虚幻3引擎开发的游戏《艾森霍恩：异形审判官（Eisenhorn: XENOS）》分别于8月和9月登陆PC及iOS平台，日前，开发商宣布，游戏将会在11月14日正式登陆安卓平台，预计售价将会与iOS版相同，为10美元。</p>
+                         </div>
+                         <div class="download fr">
+                             <a data-url="">进入官网</a>
+                             <a data-url="">游戏下载</a>
+                         </div>
+                     </div>
+                 </li>
+             </ul>-->
+        </div>
+        <div class="loadMore fl">
+            点击加载更多 <i class="background-icon"></i>
+        </div>
+    </div>
+    <footer>
+        <div class="clearfix">
+            <span class="fl"> Copyright © 成都悦游无限科技有限公司</span>
+            <p class="fr">
+                <a href="javascript:" class="link">蜀ICP备 17008430号-1</a>
+                <a href="javascript:" class="link">ICP 川B2-20160389</a>
+                <a href="javascript:">川网文【2016】3665-124号</a>
+                <a href="custody.html">家长监护系统</a>
+                <a href="register.html">实名认证系统与防沉迷</a>
+            </p>
+        </div>
+    </footer>
+    <script type="text/html" id="gameType">
+        <div class="clearfix">
+            <span class="fl typeSpan">游戏类型</span>
+            <ul class="type fl clearfix">
+                <li class="fl curr">全部</li>
+                [:if(typeof(categorys)!=="undefined"){:]
+                [:for(var i=0;i< categorys.length;i++){:]
+                <li class="fl" data-id=[:=categorys[i].id:]>[:=categorys[i].name:]</li>
+                [:}:]
+                [:}:]
+            </ul>
+        </div>
+        <div class="clearfix">
+            <span class="fl timeSpan">上线时间</span>
+            <ul class="time fl clearfix">
+                <li class="fl curr">全部</li>
+                [:if(typeof(years)!=="undefined"){:]
+                [:for(var i=0;i< years.length;i++){:]
+                <li class="fl">[:=years[i]:]</li>
+                [:}:]
+                [:}:]
+            </ul>
+        </div>
+    </script>
+    <script type="text/html" id="gameList">
+        [:if(games.list.length>0){:]
+        <ul>
+            [:for(var i=0;i< games.list.length;i++){:]
+            <li>
+                <div class="bg"><span class=""></span></div>
+                <div class="bgRight"><span class=""></span></div>
+                <div class="clearfix" href="javascript:">
+                    <div class="img fl">
+                        <img src="[:=games.list[i].icon:]" alt="">
+                    </div>
+                    <div class="text fl">
+                        <h3><span class="tit">[:=games.list[i].name:]</span>
+                            [:for(var k=0;k< games.list[i].typeList.length;k++){:]
+                            <span>[:=games.list[i].typeList[k]:]</span>
+                            [:}:]
+                        </h3>
+                        <p>[:=games.list[i].intro:]</p>
+                    </div>
+                    <div class="download fr">
+                        [:if(games.list[i].officialUrl!==""){:]
+                        <a class="enter" target="_blank" href="[:=games.list[i].officialUrl:]">进入官网</a>
+                        [:}:]
+                        [:if(games.list[i].downloadUrlAndroid!==""){:]
+                        <a class="down" href="[:=games.list[i].downloadUrlAndroid:]">游戏下载</a>
+                        [:}:]
+                    </div>
+                </div>
+            </li>
+            [:}:]
+        </ul>
+        [:}else{:]
+        <div>
+            <img src="img/no.png" alt="">
+            <p>没有匹配内容</p>
+            <a href="javascript:" onclick="location.reload()">重新试试</a>
+        </div>
+        [:}:]
+    </script>
+    <script type="text/html" id="hot_game">
+        <div class="Rgame">
+            <h2>热门游戏</h2>
+            <ul>
+                [:if(typeof(ad.list) !=="undefined"){:]
+                [:for(var i=0;i< ad.list.length;i++){:]
+                <li>
+                    <a target="_blank" href="[:=ad.list[i].href1:]">
+                        <img src="[:=ad.list[i].bigImg:]" alt="">
+                        <div class="lay"></div>
+                    </a>
+                </li>
+                [:}:]
+                [:}:]
+            </ul>
+        </div>
+    </script>
+    <script src="js/lib/jquery-1.x.min.js"></script>
+    <script src="js/lib/tppl.js"></script>
+    <script src="js/game.js"></script>
+    <script>
+        $(".link").on("click", function () {
+            window.open('javascript:window.name;', '<script>location.replace("http://www.miibeian.gov.cn/state/outPortal/loginPortal.action")<\/script>');
+        })
+    </script>
+    <script>
+        /*   var gameHtml, hotGameHtml;
+         var pageNum = 1;
+         $.ajax({
+         //            url: "type.json",
+         url: "http://op.yueeyou.com/portal/api/gameCategorys",
+         type: "get",
+         dataType: "json"
+         }).done(function (res) {
+         if (res.statusCode == 200) {
+         var res = res.data;
+         gameHtml = tppl(document.getElementById('gameType').innerHTML, res);
+         $(".typeChoose").append(gameHtml);
+         }
+         }).done(function () {
+         $(".typeChoose").on("click", 'li', function () {
+         pageNum = 1;
+         var $this = $(this);
+         $this.addClass("curr").siblings().removeClass("curr");
+         typeChoose();
+         });
+         });
+         typeChoose();
+         $.ajax({
+         url: "http://op.yueeyou.com/portal/api/ad",
+         type: "get",
+         dataType: "json",
+         data: {
+         type: "GAME_HOT_GAME"
+         }
+         }).done(function (res) {
+         if (res.statusCode == 200) {
+         var res = res.data;
+         hotGameHtml = tppl(document.getElementById('hot_game').innerHTML, res);
+         $(".rmyx").append(hotGameHtml);
+         }
+         })
+         function typeChoose(flag) {
+         flag = flag || false;
+         var url = "http://op.yueeyou.com/portal/api/games";
+         var category, createDate;
+         $.trim($(".typeChoose").find(".time .curr").text()) !== "全部" ? createDate = $(".typeChoose").find(".time .curr").text() : createDate = '';
+         $.trim($(".typeChoose").find(".type .curr").text()) !== "全部" ? category = $(".typeChoose").find(".type .curr").data("id") : category = '';
+         $.ajax({
+         url: url,
+         type: "get",
+         dataType: "json",
+         data: {
+         category: category,
+         createDate: createDate,
+         pageNum: pageNum
+         }
+         }).done(function (res) {
+         if (res.statusCode === 200) {
+         var res = res.data;
+         pageNum++;
+         var gameListHtml = tppl(document.getElementById('gameList').innerHTML, res);
+         flag ? $(".gameList").append(gameListHtml) : $(".gameList").html(gameListHtml);
+         res.games.list.length < 10 ? $(".loadMore").hide() : $(".loadMore").show();
+         }
+         }).done(function () {
+         $(".download").css({
+         "margin-top": -($(".download").height() / 2)
+         })
+         });
+         window.onscroll = function () {
+         var scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop,
+         heightAdd = $('.rmyx').offset().top + $('.rmyx').find('.Rgame').height(),
+         heightLi = $("footer").offset().top - 40;
+         if (scrollTop - heightAdd >= 0 && scrollTop - heightLi <= -$('.rmyx').find('.Rgame').height() - 50) {
+         $('.rmyx').find('.Rgame').addClass("fid");
+         }
+         else {
+         $('.rmyx').find('.Rgame').removeClass("fid");
+         }
+         };
+         }
+         $(".loadMore").on("click", function () {
+         typeChoose(true);
+         })*/
+    </script>
+    </body>
+</html> 

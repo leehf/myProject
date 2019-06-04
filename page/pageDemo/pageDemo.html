@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="page.css" />
+		<title></title>
+	</head>
+
+	<body>
+		<div class="page"></div>
+		<script src="http://raw.d.cn/wwwdcn/170421/js/lib/jquery-1.11.3.min.js"></script>
+		<script src="pageList.js"></script>
+		<script type="text/javascript">
+			//翻页
+			addPageList({
+				pageStr: ".page",
+				pageCount: 5, //总页数
+				pageCurr: 3,
+				/*当前页码*/
+				url: "page.json",
+				pageCallBack: function(op, res, obj) {
+					/*举例子，存在请求URL时的成功回调函数
+					 *
+					 */
+					addPageList({
+						pageStr: ".page",
+						pageCount: 6, //总页数
+						pageCurr: 1
+					})
+				},
+				callBackNoUrl: function(op, obj, pageNum) {
+					debugger
+				}
+			});
+		</script>
+	</body>
+
+</html>

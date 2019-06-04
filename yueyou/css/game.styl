@@ -1,0 +1,250 @@
+body > div {
+    &.typeChoose {
+        //margin-top: 100px;
+        width: 1200px;
+        margin: 130px auto 0 auto;
+        min-height: 140px;
+        //height: 140px;
+        background: #fff;
+        border: solid 1px rgba(229, 229, 229, 1);
+        > div {
+            min-height: 70px;
+            padding: 0 20px;
+            span {
+                margin: 28px 0 20px 0;
+                line-height: 22px;
+                font-size: 18px;
+                color: #666;
+                &.timeSpan {
+                    margin: 20px 0 28px 0;
+                }
+                //margin-right: 35px;
+            }
+            ul {
+                max-width: 1050px;
+                margin: 8px 0 20px 0;
+                li {
+                    margin-top: 20px;
+                    line-height: 22px;
+                    font-size: 16px;
+                    color: #666;
+                    margin-left: 40px;
+                    cursor: pointer;
+                    &.first-of-type {
+                        margin-left: 0;
+                    }
+                    &.curr, &:hover {
+                        color: #e74e02;
+                    }
+                }
+                &.time {
+                    margin: 0 0 28px 0;
+                }
+            }
+        }
+    }
+    &.content {
+        width: 1200px;
+        margin: 0 auto;
+
+        > div {
+            &.rmyx {
+                margin-top: 20px;
+            }
+            &.gameList {
+                width: 860px;
+                min-height: 600px;
+                > div {
+                    margin-top: 20px;
+                    background: #fff;
+                    min-height: 600px;
+                    text-align: center;
+                    padding-top: 100px;
+                    p {
+                        margin-top: 30px;
+                        color: #999;
+                        font-size: 16px;
+                    }
+                    > a {
+                        display: inline-block;
+                        margin-top: 15px;
+                        color: #e75208;
+                        font-size: 16px;
+                        text-decoration: underline;
+                    }
+                }
+                ul {
+                    li {
+                        border: 2px solid #fff;
+                        background: #fff;
+                        height: 160px;
+                        padding: 20px 20px 12px 20px;
+                        margin-top: 20px;
+                        position: relative;
+                        &:hover {
+                            border: 2px solid #ffd6cc;
+                        }
+                        div {
+                            position: relative;
+                            display: block;
+                            div {
+                                &.img {
+                                    width: 120px;
+                                    height: 120px;
+                                    img {
+                                        width: 120px;
+                                        height: 120px;
+                                        border-radius: 20px;
+                                    }
+                                }
+                                &.text {
+                                    margin-left: 20px;
+                                    width: 485px;
+                                    h3 {
+                                        width: 500px;
+                                        span {
+                                            display: inline-block;
+                                            font-weight: normal;
+                                            font-size: 14px;
+                                            color: #f07070;
+                                            vertical-align: bottom;
+                                            margin: 0 0 0 5px;
+                                            &:first-of-type {
+                                                height: 21px;
+                                                font-size: 20px;
+                                                font-weight: normal;
+                                                line-height: 22px;
+                                                letter-spacing: 0px;
+                                                color: #333333;
+                                                margin-right: 10px;
+                                                margin-left: 0;
+                                                max-width: 400px;
+                                                overflow: hidden;
+                                                text-overflow: ellipsis;
+                                                white-space: nowrap;
+                                            }
+                                        }
+                                    }
+                                    p {
+                                        margin-top: 10px;
+                                        width: 100%;
+                                        height: 86px;
+                                        overflow: hidden;
+                                        font-size: 14px;
+                                        color: #666;
+                                        line-height: 1.5;
+                                    }
+                                }
+                                &.download {
+                                    position: absolute;
+                                    right: 20px;
+                                    top: 50%;
+                                    width: 120px;
+                                    > a {
+                                        display: block;
+                                        width: 120px;
+                                        height: 40px;
+                                        line-height: 36px;
+                                        font-size: 14px;
+                                        text-align: center;
+                                        border-radius: 5px;
+                                        background: #fff;
+                                        border: 2px solid #e75208;
+                                        color: #e75208;
+                                        //box-shadow: 1px 1px 1px rgba(231, 82, 8, 1);
+                                        &:hover {
+                                            background: #e75208;
+                                            color: #fff;
+                                        }
+                                        &.enter {
+                                            border: 2px solid #0ebeee;
+                                            color: #0ebeee;
+                                            //box-shadow: 1px 1px 1px rgba(0, 172, 238, 1);
+                                            margin-bottom: 15px;
+                                            &:hover {
+                                                background: #0ebeee;
+                                                color: #fff;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &.loadMore {
+                margin-top: 20px;
+                display: none;
+                width: 860px;
+                height: 48px;
+                background: #e4e4e4;
+                text-align: center;
+                line-height: 48px;
+                cursor: pointer;
+                i {
+                    display: inline-block;
+                    width: 18px;
+                    height: 18px;
+                    background-position: 0 -175px;
+                    vertical-align: text-top;
+                }
+                &:hover {
+                    background: #ffd4c9;
+                }
+            }
+        }
+    }
+}
+
+.bg {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 430px;
+    > span {
+        position: relative;
+        height: 100%;
+        float: right;
+        width: 0;
+        background: #fff2ef;
+
+        transition: width 1s;
+        -moz-transition: width 1s; /* Firefox 4 */
+        -webkit-transition: width 1s; /* Safari and Chrome */
+        -o-transition: width 1s; /* Opera */
+    }
+}
+
+.gameList {
+    li {
+        &:hover {
+            .bgRight, .bg {
+                span {
+                    width: 430px;
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}
+
+.bgRight {
+    position: absolute !important;
+    top: 0;
+    left: 430px;
+    height: 100%;
+    width: 430px;
+    > span {
+        position: relative;
+        height: 100%;
+        float: left;
+        width: 0;
+        background: #fff2ef;
+        transition: width 1s;
+        -moz-transition: width 1s; /* Firefox 4 */
+        -webkit-transition: width 1s; /* Safari and Chrome */
+        -o-transition: width 1s; /* Opera */
+    }
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+        <div style="font-size: 50px">5</div>
+        <script src="js/lib/jquery-1.x.min.js"></script>
+        <script>
+            var num = parseInt($("div").text());
+            js()
+            function js() {
+                num--;
+                $("div").text(num)
+                if (num == 0) {
+//                  location.replace("-index.html")
+                } else {
+                    setTimeout(function () {
+                        js();
+                    }, 1000);
+                }
+            }
+        </script>
+    </body>
+</html>

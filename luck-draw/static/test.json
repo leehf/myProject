@@ -1,0 +1,24 @@
+{
+	"code": 1,
+	"data": {
+		"code": 1,
+		"pf": 1,
+		"price": 1,
+		"winnerResultId": 539846,
+		"appId": 195,
+		"category": "",
+		"createdDate": 1467018234000,
+		"description": "一款蜡笔小新立体鼠标垫，可爱小新硅胶护腕。",
+		"id": 547,
+		"imgUrl": "./static/demo-icon.png",
+		"lastUpdateDate": 1499331294000,
+		"name": "《乐赢互动》鼠标垫",
+		"operater": "钱强",
+		"price": 20.00,
+		"specification": "",
+		"status": "MUCH",
+		"storage": 9996,
+		"usingCnt": 33299
+	},
+	"msg": "success"
+}

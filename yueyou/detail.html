@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/common.min.css">
+        <link rel="stylesheet" href="js/lib/swiper/idangerous.swiper.css">
+        <link rel="stylesheet" href="css/detail.min.css">
+        <meta name="description" itemprop="description" content="悦游无限，用心为每一位游戏爱好者服务。">
+        <meta name="keywords" content="悦游无限,游戏,网游,游戏发行,手游">
+        <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/lib/respond.min.js"></script>
+        <script type="text/javascript" src="js/lib/selectivizr-min.js"></script>
+        <script type="text/javascript" src="js/lib/html5.min.js"></script>
+        <![endif]-->
+        <title>悦游无限</title>
+    </head>
+    <body>
+        <div class="header">
+            <div class="secHeader">
+                <a href="index.html" class="logo">
+                    <img src="img/logo.png" alt="">
+                </a>
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            首页
+                            <span>HOME</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="game.html">
+                            代理游戏
+                            <span>AGENT GAME</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            关于我们
+                            <span>ABOUT US</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="detail">
+            <!--<div><a style="background: url('http://img.d.cn/be/image/1709/8q44ej7zly6j2.jpg')" class="img" href=""></a></div>-->
+            <!--<div class="text">测试查看，因为json中使用html结构时 因为引号问题出错不能本地测试-->
+        </div>
+        <footer>
+            <div class="clearfix">
+                <span class="fl"> Copyright © 成都悦游无限科技有限公司</span>
+                <p class="fr">
+                    <a href="javascript:" class="link">蜀ICP备 17008430号-1</a>
+                    <a href="javascript:" class="link">ICP 川B2-20160389</a>
+                    <a href="javascript:">川网文【2016】3665-124号</a>
+                    <a href="custody.html">家长监护系统</a>
+                    <a href="register.html">实名认证系统与防沉迷</a>
+                </p>
+            </div>
+        </footer>
+        <script type="text/html" id="detail">
+            [:if(typeof(articleAd.list)!=="undefined" && articleAd.list[0].href1!==""){:]
+            <div><a target="_blank" href="[:=articleAd.list[0].href1:]" style="background: url('[:=articleAd.list[0].bigImg:]')no-repeat center" class="img"></a></div>
+            [:}else{:]
+            <div><a target="_blank" href="javascript:" style="background: url('[:=articleAd.list[0].bigImg:]')no-repeat center" class="img"></a></div>
+            [:}:]
+            <div class="content clearfix">
+                <div class="fl left_content">
+                    <h2>[:=article.title:]</h2>
+                    <p><span class="time">发布时间：[:=(new Date(parseInt(article.onlineDate)).getFullYear())+"-"+(new Date(parseInt(article.onlineDate)).getMonth()+1)+"-"+(new Date(parseInt(article.onlineDate)).getDate()):]</span>|<span class="org">来源：[:=article.source:]</span></p>
+                    <div class="text">
+                        [:=article.content:]
+                    </div>
+                </div>
+                <div class="fr rmyx">
+                    <div class="Rgame">
+                        <h2>热门游戏</h2>
+                        <ul>
+                            [:if(typeof(articleHotGame.list) !=="undefined"){:]
+                            [:for(var i=0;i< articleHotGame.list.length;i++){:]
+                            <li>
+                                <a target="_blank" href="[:=articleHotGame.list[i].href1:]">
+                                    <img src="[:=articleHotGame.list[i].bigImg:]" alt="">
+                                    <div class="lay"></div>
+                                </a>
+                            </li>
+                            [:}:]
+                            [:}:]
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </script>
+        <script src="js/lib/jquery-1.x.min.js"></script>
+        <script src="js/lib/tppl.js"></script>
+        <script>
+            $(".link").on("click", function () {
+                window.open('javascript:window.name;', '<script>location.replace("http://www.miibeian.gov.cn/state/outPortal/loginPortal.action")<\/script>');
+            })
+        </script>
+        <script>
+            /* function GetQueryString(str) {
+             var reg = new RegExp("(^|&)" + str + "=([^&]*)(&|$)", "i");
+             var r_a = window.location.search.substr(1).match(reg); //获取url中"?"符后的字符串并正则匹配
+             var context = "";
+             if (r_a != null)
+             context = r_a[2];
+             reg = null;
+             r_a = null;
+             return context == null || context == "" || context == "undefined" ? "" : context;
+             }*/
+            var detailHtml;
+            var url = "http://op.yueeyou.com/portal/api/article/detail" + location.search;
+            $.ajax({
+                url: url,
+                type: "get",
+                dataType: "json"
+            }).done(function (res) {
+                if (res.statusCode == 200) {
+                    var res = res.data;
+                    detailHtml = tppl(document.getElementById('detail').innerHTML, res);
+                    $(".detail").append(detailHtml);
+                }
+            }).done(function () {
+                window.onscroll = function () {
+                    var scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop,
+                        heightAdd = $('.detail').find('.rmyx').offset().top + $('.detail').find('.Rgame').height(),
+                        heightLi = $("footer").offset().top - 40;
+                    if (scrollTop - heightAdd >= 0 && scrollTop - heightLi <= -$('.detail').find('.Rgame').height() - 50) {
+                        $('.detail').find('.Rgame').addClass("fid");
+                    }
+                    else {
+                        $('.detail').find('.Rgame').removeClass("fid");
+                    }
+                };
+            })
+        </script>
+    </body>
+</html>

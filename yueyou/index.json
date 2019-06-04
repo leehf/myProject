@@ -1,0 +1,174 @@
+{
+    "statusCode": 200,
+    "desc": "请求成功",
+    "data": {
+        "homeBanner": {
+            "type": "HOME_BANNER",
+            "name": "首页轮播banner图",
+            "list": [
+                {
+                    "name": "ss",
+                    "desc": "描述描述描述描述描述描述描述描述描述",
+                    "bigImg": "http://resource.yueeyou.com/20170628/hlsg_1920x1072.png",
+                    "smallImg": "http://img.d.cn/be/image/1709/k744fj78dfq6k.png",
+                    "href1": "https://www.a.d.cn"
+                },
+                {
+                    "name": "ss",
+                    "desc": "描述描述描述描述描述描述描述描述描述",
+                    "bigImg": "http://resource.yueeyou.com/20170628/hlsg_1920x1072.png",
+                    "smallImg": "http://img.d.cn/netgame/hdlogo/5531_1454117784662_NP5nsIc8.png",
+                    "href1": "https://www.baidu.com"
+                },
+                {
+                    "name": "ss",
+                    "desc": "描述描述描述描述描述描述描述描述描述",
+                    "bigImg": "http://resource.yueeyou.com/20170628/hlsg_1920x1072.png",
+                    "smallImg": "http://img.d.cn/be/image/1709/k744fj78dfq6k.png",
+                    "href1": "https://www.a.d.cn"
+                },
+                {
+                    "name": "ss",
+                    "desc": "描述描述描述描述描述描述描述描述描述",
+                    "bigImg": "http://resource.yueeyou.com/20170628/hlsg_1920x1072.png",
+                    "smallImg": "http://img.d.cn/be/image/1709/zy440j7iosy4q.jpg",
+                    "href1": "http://www.d.cn"
+                }
+            ]
+        },
+        "homeAd": {
+            "type": "HOME_AD",
+            "name": "dddd",
+            "list": [
+                {
+                    "name": "ss",
+                    "desc": "描述描述描述描述描述描述描述描述描述",
+                    "bigImg": "http://resource.yueeyou.com/20170628/hlsg_1920x1072.png",
+                    "smallImg": "http://img.d.cn/be/image/1709/k744fj78dfq6k.png",
+                    "href1": "https://www.a.d.cn"
+                },
+                {
+                    "name": "ss",
+                    "desc": "描述描述描述描述描述描述描述描述描述",
+                    "bigImg": "http://resource.yueeyou.com/20170628/hlsg_1920x1072.png",
+                    "smallImg": "http://img.d.cn/netgame/hdlogo/5531_1454117784662_NP5nsIc8.png",
+                    "href1": "https://www.baidu.com"
+                },
+                {
+                    "name": "ss",
+                    "desc": "描述描述描述描述描述描述描述描述描述",
+                    "bigImg": "http://resource.yueeyou.com/20170628/hlsg_1920x1072.png",
+                    "smallImg": "http://img.d.cn/be/image/1709/k744fj78dfq6k.png",
+                    "href1": "https://www.a.d.cn"
+                },
+                {
+                    "name": "ss",
+                    "desc": "描述描述描述描述描述描述描述描述描述",
+                    "bigImg": "http://resource.yueeyou.com/20170628/hlsg_1920x1072.png",
+                    "smallImg": "http://img.d.cn/be/image/1709/zy440j7iosy4q.jpg",
+                    "href1": "http://www.d.cn"
+                }
+            ]
+        },
+        "articles": [
+            {
+                "id": 2,
+                "title": "《黑暗与光明：战歌》iOS首明：战歌》iOS测今测今日开日开启《黑光》抢先体验版Steam正式验版Steam正式验版Steam正式上线！"
+            },
+            {
+                "id": 3,
+                "title": "《黑光》抢先体验版Steam正式验版Steam正式验版Steam正式上线！"
+            },
+            {
+                "id": 4,
+                "title": "《黑暗与光明：战歌》iOS首明：战歌》iOS测今测今日开日开启！"
+            },
+            {
+                "id": 5,
+                "title": "《黑暗与光明：战歌》iOS首明：战歌》iOS测今测今日开日开启！"
+            },
+            {
+                "id": 6,
+                "title": "《黑暗与光明：战歌》iOS首明：战歌》iOS测今测今日开日开启！"
+            },
+            {
+                "id": 7,
+                "title": "《黑暗与光明：战歌》iOS首明：战歌》iOS测今测今日开日开启！"
+            },
+            {
+                "id": 8,
+                "title": "《黑暗与光明：战歌》iOS首明：战歌》iOS测今测今日开日开启！"
+            }
+        ],
+        "homeHotGame": {
+            "type": "HOME_HOT_GAME",
+            "name": "热门游戏",
+            "list": [
+                {
+                    "name": "世界末日",
+                    "desc": "1Apple秋季新品发布会曝光陈星汉新作，诠释“爱与给予”，网汉新作，诠释“爱与给予”，网易游戏代理。",
+                    "bigImg": "http://resource.yueeyou.com/20170628/hlsg_1920x1072.png",
+                    "smallImg": "http://img.d.cn/be/image/1709/k744fj78dfq6k.png",
+                    "href1": "https://www.a.d.cn",
+                    "href2": "https://www.a.d.cn"
+                },
+                {
+                    "name": "世界末日",
+                    "desc": "2Apple秋季新品发布会曝光陈星汉新作，诠释“爱与给予”，网汉新作，诠释“爱与给予”，网易游戏代理。",
+                    "bigImg": "http://resource.yueeyou.com/20170628/hlsg_1920x1072.png",
+                    "smallImg": "http://img.d.cn/netgame/hdlogo/5531_1454117784662_NP5nsIc8.png",
+                    "href1": "https://www.baidu.com",
+                    "href2": "https://www.a.d.cn"
+                },
+                {
+                    "name": "世界末日",
+                    "desc": "3Apple秋季新品发布会曝光陈星汉新作，诠释“爱与给予”，网汉新作，诠释“爱与给予”，网易游戏代理。",
+                    "bigImg": "http://resource.yueeyou.com/20170628/hlsg_1920x1072.png",
+                    "smallImg": "http://img.d.cn/be/image/1709/k744fj78dfq6k.png",
+                    "href1": "https://www.a.d.cn",
+                    "href2": "https://www.a.d.cn"
+                },
+                {
+                    "name": "世界末日",
+                    "desc": "4Apple秋季新品发布会曝光陈星汉新作，诠释“爱与给予”，网汉新作，诠释“爱与给予”，网易游戏代理。",
+                    "bigImg": "http://resource.yueeyou.com/20170628/hlsg_1920x1072.png",
+                    "smallImg": "http://img.d.cn/netgame/hdlogo/5531_1454117784662_NP5nsIc8.png",
+                    "href1": "https://www.baidu.com",
+                    "href2": "https://www.a.d.cn"
+                },
+                {
+                    "name": "世界末日",
+                    "desc": "5Apple秋季新品发布会曝光陈星汉新作，诠释“爱与给予”，网汉新作，诠释“爱与给予”，网易游戏代理。",
+                    "bigImg": "http://resource.yueeyou.com/20170628/hlsg_1920x1072.png",
+                    "smallImg": "http://img.d.cn/be/image/1709/k744fj78dfq6k.png",
+                    "href1": "https://www.a.d.cn",
+                    "href2": "https://www.a.d.cn"
+                },
+                {
+                    "name": "世界末日",
+                    "desc": "5Apple秋季新品发布会曝光陈星汉新作，诠释“爱与给予”，网汉新作，诠释“爱与给予”，网易游戏代理。",
+                    "bigImg": "http://resource.yueeyou.com/20170628/hlsg_1920x1072.png",
+                    "smallImg": "http://img.d.cn/be/image/1709/k744fj78dfq6k.png",
+                    "href1": "https://www.a.d.cn",
+                    "href2": "https://www.a.d.cn"
+                },
+                {
+                    "name": "世界末日",
+                    "desc": "5Apple秋季新品发布会曝光陈星汉新作，诠释“爱与给予”，网汉新作，诠释“爱与给予”，网易游戏代理。",
+                    "bigImg": "http://resource.yueeyou.com/20170628/hlsg_1920x1072.png",
+                    "smallImg": "http://img.d.cn/be/image/1709/k744fj78dfq6k.png",
+                    "href1": "https://www.a.d.cn",
+                    "href2": "https://www.a.d.cn"
+                },
+                {
+                    "name": "世界末日",
+                    "desc": "6描述描述描述描述描述描述描述描述描述",
+                    "bigImg": "http://resource.yueeyou.com/20170628/hlsg_1920x1072.png",
+                    "smallImg": "http://img.d.cn/be/image/1709/zy440j7iosy4q.jpg",
+                    "href1": "http://www.d.cn",
+                    "href2": "https://www.a.d.cn"
+                }
+            ]
+        }
+    }
+}

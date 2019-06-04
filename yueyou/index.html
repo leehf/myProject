@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/common.min.css">
+        <link rel="stylesheet" href="js/lib/swiper/idangerous.swiper.css">
+        <link rel="stylesheet" href="css/index.min.css">
+        <meta name="description" itemprop="description" content="悦游无限，用心为每一位游戏爱好者服务。">
+        <meta name="keywords" content="悦游无限,游戏,网游,游戏发行,手游">
+        <script>
+            var ua = window.navigator.userAgent.toLocaleLowerCase();
+            if (ua.indexOf("mobile") != -1) {
+                window.location.href = "http://x.yueeyou.com";
+            }
+        </script>
+        <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/lib/respond.min.js"></script>
+        <script type="text/javascript" src="js/lib/selectivizr-min.js"></script>
+        <script type="text/javascript" src="js/lib/html5.min.js"></script>
+        <![endif]-->
+        <title>悦游无限</title>
+    </head>
+    <body>
+        <div class="header">
+            <div class="secHeader">
+                <a href="index.html" class="logo">
+                    <img src="img/logo.png" alt="">
+                </a>
+                <ul>
+                    <li class="curr">
+                        <a href="index.html">
+                            首页
+                            <span>HOME</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="game.html">
+                            代理游戏
+                            <span>AGENT GAME</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            关于我们
+                            <span>ABOUT US</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="firstModel"></div>
+        <article class="popularGame">
+            <!--<ul class="clearfix">
+                <li class="fl">
+                    <div>
+                        <img src="http://img.d.cn/be/image/1709/a744kj7tvs5bh.jpg" alt="">
+                        <div class="fixedFooter">
+                            <div class="clearfix">
+                                <img class="fl" src="http://img.d.cn/be/image/1709/k744fj78dfq6k.png" alt="">
+                                <p class="fl">Apple秋季新品发布会曝光陈星汉新作，诠释“爱与给予”，网
+                                    汉新作，诠释“爱与给予”，网
+                                    易游戏代理。</p>
+                            </div>
+                            <div class="btn">
+                                <a href="">进入官网</a>
+                                <a href="" class="download">游戏下载</a>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="gameName">
+                        世界末日
+                    </span>
+                </li>
+            </ul>-->
+        </article>
+        <footer>
+            <div class="clearfix">
+                <span class="fl"> Copyright © 成都悦游无限科技有限公司</span>
+                <p class="fr">
+                    <a href="javascript:" class="link">蜀ICP备 17008430号-1</a>
+                    <a href="javascript:" class="link">ICP 川B2-20160389</a>
+                    <a href="javascript:">川网文【2016】3665-124号</a>
+                    <a href="custody.html">家长监护系统</a>
+                    <a href="register.html">实名认证系统与防沉迷</a>
+                </p>
+            </div>
+        </footer>
+        <!--<img src=[:=data.homeBanner.list[i].bigImg:] alt="">-->
+        <script type="text/html" id="banner">
+            [:if((data.homeBanner.list.length >=1 && typeof(data.homeBanner.list.length)!=="undefined")){:]
+            <div class="banner-swiper banner">
+                <ul class="swiper-wrapper">
+                    [:for(var i=0;i< data.homeBanner.list.length;i++){:]
+                    <li class="swiper-slide num">
+                        <a href=[:=data.homeBanner.list[i].href1:] target="_blank" style="background: url([:=data.homeBanner.list[i].bigImg:])no-repeat center">
+                        </a>
+                    </li>
+                    [:}:]
+                </ul>
+            </div>
+            [:}:]
+            <div class="bannerContent clearfix">
+                [:if((data.homeBanner.list.length >1 && typeof(data.homeBanner.list)!=="undefined")){:]
+                <span class="prev"><i class="background-icon"></i></span>
+                <span class="next"><i class="background-icon"></i></span>
+                [:}:]
+                <nav class="nav bannerNav">
+                    <ul class="clearfix">
+                        [:if((data.homeBanner.list.length >1 && typeof(data.homeBanner.list)!=="undefined")){:]
+                        [:for(var i=0;i< data.homeBanner.list.length;i++){:]
+                        <li class="li">
+                            <a href="javascript:"></a>
+                        </li>
+                        [:}:]
+                        [:}:]
+                    </ul>
+                </nav>
+                <div class="leftContent fl">
+                    <div class="layer"></div>
+                    <div class="swiper_con">
+                        <div class="swiper-wrapper">
+                            [:if((data.homeAd.list.length >=1 && typeof(data.homeAd.list)!=="undefined")){:]
+                            [:for(var i=0;i< data.homeAd.list.length;i++){:]
+                            <div class="swiper-slide ad_num">
+                                <a target="_blank" href="[:=data.homeAd.list[i].href1:]">
+                                    <img src="[:=data.homeAd.list[i].bigImg:]" alt="">
+                                </a>
+                            </div>
+                            [:}:]
+                            [:}:]
+                        </div>
+                    </div>
+                    <nav class="nav contentNav ">
+                        <ul class="clearfix fr">
+                            [:if((data.homeAd.list.length >1 && typeof(data.homeAd.list)!=="undefined")){:]
+                            [:for(var i=0;i< data.homeAd.list.length;i++){:]
+                            <li class="li fl">
+                                <a href="javascript:"></a>
+                            </li>
+                            [:}:]
+                            [:}:]
+                        </ul>
+                    </nav>
+                </div>
+                <div class="rightContent fr">
+                    <div class="title">
+                        <h2>最新动态</h2>
+                    </div>
+                    <div class="detail">
+                        [:if((data.articles.length >0 && typeof(data.articles)!=="undefined")){:]
+                        [:for(var i=0;i< 5 && i< data.articles.length;i++){:]
+                        <div class="text">
+                            <a target="_blank" href='detail.html?id=[:=data.articles[i].id:]'>
+                                <i class="background-icon"></i><span>[:=data.articles[i].title:]</span>
+                            </a>
+                        </div>
+                        [:}:]
+                        [:}:]
+                    </div>
+                </div>
+            </div>
+        </script>
+        <script type="text/html" id="popularGame">
+            [:if((data.homeHotGame.list.length >0 && typeof(data.homeHotGame.list)!=="undefined")){:]
+            <div class="gameTit">
+                <h2>热门游戏</h2>
+                <a href="game.html">
+                    MORE +
+                </a>
+            </div>
+            <div class="gameContent">
+                <ul class="clearfix">
+                    [:for(var i=0;i< data.homeHotGame.list.length && i< 6;i++){:]
+                    <li class="fl">
+                        <div>
+                            <img src="[:=data.homeHotGame.list[i].bigImg:]" alt="">
+                            <div class="fixedFooter">
+                                <div class="clearfix">
+                                    <img class="fl" src="[:=data.homeHotGame.list[i].smallImg:]" alt="">
+                                    <p class="fl">[:=data.homeHotGame.list[i].desc:]</p>
+                                </div>
+                                <div class="btn">
+                                    [:if((data.homeHotGame.list[i].href1 !=="")){:]
+                                    <a target="_blank" href="[:=data.homeHotGame.list[i].href1:]">进入官网</a>
+                                    [:}:]
+                                    [:if((data.homeHotGame.list[i].href2 !=="")){:]
+                                    <a href="[:=data.homeHotGame.list[i].href2:]" class="download">游戏下载</a>
+                                    [:}:]
+                                </div>
+                            </div>
+                        </div>
+                        <span class="gameName">
+                         [:=data.homeHotGame.list[i].name:]
+                        </span>
+                    </li>
+                    [:}:]
+                </ul>
+            </div>
+            [:}:]
+        </script>
+        <script src="js/lib/jquery-1.x.min.js"></script>
+        <script src="js/lib/swiper/idangerous.swiper.js"></script>
+        <script src="js/lib/tppl.js"></script>
+        <script src="js/index.js"></script>
+        <script>
+            $(".link").on("click", function () {
+                window.open('javascript:window.name;', '<script>location.replace("http://www.miibeian.gov.cn/state/outPortal/loginPortal.action")<\/script>');
+            })
+        </script>
+    </body>
+</html>

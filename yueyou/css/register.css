@@ -1,0 +1,154 @@
+body > div.warpper {
+  width: 100%;
+  margin-top: 120px;
+}
+body > div.warpper form {
+  width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  position: relative;
+  padding: 40px 75px;
+}
+body > div.warpper form h1 {
+  text-align: center;
+  font-size: 28px;
+  color: #666;
+}
+body > div.warpper form > input {
+  width: 100%;
+  height: 52px;
+  line-height: 50px;
+  border: 1px solid #e4e4e4;
+  margin-top: 30px;
+  padding: 0 10px;
+  font-size: 16px;
+  color: #999;
+}
+body > div.warpper form > input.submitBtn {
+  background: #55af0c;
+  color: #fff;
+  font-size: 20px;
+  line-height: 52px;
+  border: none;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+body > div.warpper form > input.sign {
+  background: #df5000;
+  color: #fff;
+  font-size: 20px;
+  line-height: 52px;
+  border: none;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+body > div.warpper form div {
+  margin-top: 30px;
+  line-height: 36px;
+}
+body > div.warpper form div > input {
+  width: 15px;
+  height: 15px;
+  vertical-align: sub;
+}
+body > div.warpper form div label {
+  width: 201px;
+  height: 17px;
+  font-size: 16px;
+  color: #333;
+  margin-left: 10px;
+}
+body > div.warpper form > p {
+  height: 17px;
+  font-size: 16px;
+  line-height: 36px;
+  color: #666;
+  position: absolute;
+  right: 75px;
+  bottom: 39px;
+}
+.text {
+  width: 800px;
+  margin: 20px auto 0;
+  color: #666;
+  line-height: 36px;
+  font-size: 14px;
+}
+.dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 1000;
+}
+.dialog > div {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  height: 100%;
+  width: 800px;
+  margin-left: -400px;
+  padding: 20px 0 40px 0;
+}
+.dialog > div > div.dialogTitle {
+  background: #ccc;
+  color: #000;
+  padding-left: 5px;
+  line-height: 25px;
+  width: 100%;
+  position: relative;
+}
+.dialog > div > div.dialogTitle > a {
+  color: #000;
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+  top: 3px;
+  padding: 0 5px;
+  line-height: 18px;
+}
+.dialog > div > div.dialogContent {
+  width: 100%;
+  height: 100%;
+  padding: 20px 20px 40px 20px;
+  overflow: auto;
+  background: #fff;
+}
+.dialog > div > div.dialogContent pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+.warpper form a:hover {
+  text-decoration: underline;
+}
+.success {
+  width: 800px;
+  height: 390px;
+  margin: 0 auto;
+  background: #fff;
+  padding-top: 143px;
+}
+.success div p {
+  text-align: center;
+  line-height: 32px;
+  font-size: 28px;
+  color: #666;
+}
+.success div p:last-of-type {
+  margin-top: 40px;
+}
+.toast {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  line-height: 40px;
+  border-radius: 10px;
+  background: #e1e1e1;
+  padding: 0 40px;
+  z-index: 55;
+}
