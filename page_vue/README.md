@@ -17,6 +17,6 @@
   * inputNum：输入框中可输入的页码，从1到尾页；
  * */ 
 访问demo效果：
-<a href="https://leehf.github.io/myProject/page_vue/">点击访问</a>
+<a href="https://leehf.github.io/myProject/page_vue/" target"_blank">点击访问</a>
  
  

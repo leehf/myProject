@@ -2,4 +2,4 @@
 #其中包含了首页+游戏列表+相关信息+登录/注册等页面
 
 #访问地址：
-<a href="https://leehf.github.io/myProject/vue_fxgw/index">点击访问</a>
+<a href="https://leehf.github.io/myProject/vue_fxgw/index" target"_blank">点击访问</a>

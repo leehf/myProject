@@ -1,0 +1,13 @@
+html,body{
+	font-size: 12px;
+	background-color: #999;
+	height: 100%;
+	overflow: hidden;
+}
+#app>div{
+	width: 300px;
+	height: 200px;
+	background: url('../../static/img/demo.png')no-repeat center;
+}
+/* 样式引入
+@import "../../static/css/common.scss"; */

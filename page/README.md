@@ -5,4 +5,4 @@
 **
 **/
 #项目demo地址
-<a href="https://leehf.github.io/myProject/page/pageDemo/pageDemo.html">点击访问</a>
+<a href="https://leehf.github.io/myProject/page/pageDemo/pageDemo.html" target"_blank">点击访问</a>
