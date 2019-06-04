@@ -15,4 +15,4 @@
  # 	
 	
 # 访问地址
-<a href="https://leehf.github.io/myProject/catchJ/" target"_blank">点击访问()</a>
+<a href="https://leehf.github.io/myProject/catchJ/" >点击访问</a>

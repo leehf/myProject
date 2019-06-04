@@ -59,17 +59,17 @@ npm run build --report
  *
  *
  *
- * 调用方式：
+ #调用方式：
  * <cj :infoUrl="infoUrl" :awardUrl="awardUrl" v-on:receiveData="receive" v-on:timeOut="overtime" :needDialog="needDialog" :cjClick="cjStart"></cj>
 
  */
 =======
- * 调用方式： <cj '
- :infoUrl="infoUrl" :awardUrl="awardUrl" v-on:receiveData="receive" v-on:timeOut="overtime" :needDialog="needDialog" :cjClick="cjStart">
-'</cj>
+#调用方式： 
+<cj ':infoUrl="infoUrl" :awardUrl="awardUrl" v-on:receiveData="receive"
+ v-on:timeOut="overtime" :needDialog="needDialog" :cjClick="cjStart">'</cj>
  *
  */
 >>>>>>> 717dc36b145da4a5feb40940a156639a4b84031f
 
 # 访问DEMO地址：
-<a href="https://leehf.github.io/myProject/luck-draw/dist" target"_blank">点击访问</a>
+<a href="https://leehf.github.io/myProject/luck-draw/dist" >点击访问</a>
