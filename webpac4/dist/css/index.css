@@ -1,0 +1,15 @@
+@charset "UTF-8";
+html, body {
+  font-size: 12px;
+  background-color: #fff;
+  height: 100%;
+  overflow: hidden;
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0); }
+
+/* 样式引入 
+@import "../../static/css/common.scss";*/
+
