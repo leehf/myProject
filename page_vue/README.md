@@ -16,5 +16,7 @@
   * pageListNum:显示的页码个数，默认是3个;
   * inputNum：输入框中可输入的页码，从1到尾页；
  * */ 
+访问demo效果：
+<a href="https://leehf.github.io/myProject/page_vue/">点击访问</a>
  
  

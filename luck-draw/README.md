@@ -70,3 +70,6 @@ npm run build --report
  *
  */
 >>>>>>> 717dc36b145da4a5feb40940a156639a4b84031f
+
+# 访问DEMO地址：
+<a href="https://leehf.github.io/myProject/luck-draw/dist">点击访问</a>
