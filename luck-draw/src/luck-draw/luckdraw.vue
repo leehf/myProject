@@ -1,14 +1,18 @@
 <template>
 	<div>
-		<div class="cj-box" :class="{curr:!boxRote}">
-			<!--<div class="rote">-->
-			<ul class="clearfix">
-				<li class="fl" v-for="(item,index) in cjInfo" :key="index" :class="{active:index==activeIndex}" :id="item.id">
-					<img v-if="index==4" @click="goCj()" :src="item.picUrl" alt="" />
-					<img v-else :src="item.picUrl" alt="" />
-				</li>
-			</ul>
-			<!--</div>-->
+		<div class="main-box">
+			<div class="cj-box" :class="{curr:!boxRote}">
+				<!--<div class="rote">-->
+				<ul class="clearfix">
+					<li class="fl" v-for="(item,index) in cjInfo" :key="index" :class="{active:index==activeIndex}" :id="item.id">
+						<img v-if="index==4" @click="goCj()" :src="item.picUrl" alt="" />
+						<div v-else class="img">
+							<img :src="item.picUrl" alt="" />
+						</div>
+					</li>
+				</ul>
+				<!--</div>-->
+			</div>
 		</div>
 		<div class="toast" v-if="toastShow">
 			{{toastText}}
@@ -84,7 +88,7 @@
 			var that = this
 			var img = new Image();
 			img.src = cjBg;
-			if(img.complete) {
+			if (img.complete) {
 				that.boxrota()
 			}
 			img.onload = function() {
@@ -95,7 +99,7 @@
 		methods: {
 			boxrota() {
 				var that = this
-				if(that.boxRote) {
+				if (that.boxRote) {
 					that.boxRote = false
 				} else {
 					that.boxRote = true
@@ -107,24 +111,24 @@
 			cj_active() {
 				var that = this;
 				//01258763-01258763轮转顺序
-				if(that.rewardId !== "" && that.overRote >= that.rotaVal) {
+				if (that.rewardId !== "" && that.overRote >= that.rotaVal) {
 					that.qfId(that.rewardId)
 				}
-				if(that.activeIndex < 2) {
+				if (that.activeIndex < 2) {
 					that.activeIndex++
-				} else if(that.activeIndex == 2) {
+				} else if (that.activeIndex == 2) {
 					that.activeIndex = 5
-				} else if(that.activeIndex == 5) {
+				} else if (that.activeIndex == 5) {
 					that.activeIndex = 8
-				} else if(that.activeIndex <= 8 && that.activeIndex > 6) {
+				} else if (that.activeIndex <= 8 && that.activeIndex > 6) {
 					that.activeIndex--
-				} else if(that.activeIndex == 6) {
+				} else if (that.activeIndex == 6) {
 					that.activeIndex = 3
-				} else if(that.activeIndex == 3) {
+				} else if (that.activeIndex == 3) {
 					that.activeIndex = 0;
 					that.overRote++;
 				}
-				if((that.rewardIndex === that.activeIndex)) {
+				if ((that.rewardIndex === that.activeIndex)) {
 					that.cjStop()
 					that.timer = setTimeout(() => {
 						that.delay = true;
@@ -140,7 +144,7 @@
 			},
 			dialog() {
 				let that = this;
-				if(that.needDialog) {
+				if (that.needDialog) {
 					that.overaward = true
 				}
 			},
@@ -150,11 +154,11 @@
 				that.activeIndex = 0;
 				that.overRote = 0;
 				that.rewardIndex = "";
-				that.rewardId=""
+				that.rewardId = ""
 			},
 			goCj() {
 				var that = this;
-				if(that.delay) {
+				if (that.delay) {
 					that.delay = false;
 					that.$emit("cjClick")
 					axios.get(that.awardUrl)
@@ -178,8 +182,8 @@
 			qfId(id) {
 				let that = this;
 				that.cjInfo.forEach(function(v, i) {
-					if(i !== 4) {
-						if(v.id == id) {
+					if (i !== 4) {
+						if (v.id == id) {
 							that.rewardIndex = i;
 						}
 					}
@@ -208,8 +212,9 @@
 		max-width: 640px;
 		margin: 0 auto;
 	}
-	
+
 	$baseWidth:360;
+
 	.cj_result {
 		position: fixed;
 		top: 50%;
@@ -220,6 +225,7 @@
 		background-color: rgba(0, 0, 0, .6);
 		z-index: 6;
 		max-width: 640px;
+
 		article {
 			position: absolute;
 			width: 80%;
@@ -228,6 +234,7 @@
 			transform: translate(-50%, -50%);
 			background-color: #fff;
 			padding: 10px;
+
 			.close {
 				position: absolute;
 				font-size: 20px;
@@ -236,42 +243,62 @@
 				top: -10px;
 				cursor: pointer;
 			}
+
 			img {
 				margin: 10px auto;
 			}
 		}
 	}
-	
-	.cj-box {
+
+	.main-box {
 		width: 275/$baseWidth*100%;
+		padding-bottom: 275/$baseWidth*100%;
+		box-sizing: border-box;
+		margin: 0 auto;
+		overflow: hidden;
+		position: relative;
+		height: 0;
+
+	}
+
+	.cj-box {
+		position: absolute;
+		width: 100%;
+		height: 100%;
 		padding: 32/$baseWidth*100% 20px;
 		background: url("./img/cj-bg.png") no-repeat center;
 		background-size: contain;
 		box-sizing: border-box;
 		margin: 0 auto;
 		overflow: hidden;
+
 		&.curr {
 			background: url("./img/cj-bg-curr.png") no-repeat center;
 			background-size: contain;
 		}
+
 		ul {
 			padding: 2.5%;
+
 			li {
 				width: 30%;
 				text-align: center;
 				margin-left: 2.5%;
-				padding: 5px 0;
+				padding: calc(5px + 3%) 0;
 				padding-right: 4px;
 				box-sizing: border-box;
 				cursor: pointer;
 				border-radius: 5px;
 				background: #fff;
 				position: relative;
+
 				&:nth-of-type(n+4) {
 					margin-top: 3%;
 				}
+
 				&:nth-of-type(5) {
 					padding: 0 0;
+
 					img {
 						width: 100%;
 						margin-top: 0;
@@ -280,6 +307,7 @@
 						transform: translate(-50%);
 					}
 				}
+
 				/*	display: flex;
 				justify-content: center;
 				align-items: center;
@@ -288,14 +316,27 @@
 					background: url("./img/hover.png") no-repeat center;
 					background-size: 100%;
 				}
-				img {
+
+				.img {
 					width: 70%;
-					margin-top: 15%;
+					position: relative;
+					height: 0;
+					line-height: 0;
+					padding-bottom: 70%;
+					margin: 0 auto;
+
+					img {
+						position: absolute;
+						height: 100%;
+						width: 100%;
+						top: 0;
+						left: 0;
+					}
 				}
 			}
 		}
 	}
-	
+
 	.toast {
 		height: 40px;
 		line-height: 40px;
